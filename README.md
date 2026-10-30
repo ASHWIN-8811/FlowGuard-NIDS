@@ -76,38 +76,18 @@ joblib>=1.3.0
 ### Step 1: Clone the Repository
 Open your terminal (PowerShell, Command Prompt, or Bash) and clone the repository:
 ```bash
-git clone https://github.com/<your-username>/<your-repo-name>.git
-cd <your-repo-name>
+git clone https://github.com/ASHWIN-8811/FlowGuard-NIDS.git
+cd FlowGuard-NIDS
 ```
 
-### Step 2: Create & Activate a Virtual Environment
-
-**On Windows (PowerShell):**
-```powershell
-python -m venv venv
-.\venv\Scripts\Activate.ps1
-```
-*(If script execution is restricted in PowerShell, run `Set-ExecutionPolicy -Scope Process -ExecutionPolicy Bypass` first).*
-
-**On Windows (Command Prompt):**
-```cmd
-python -m venv venv
-.\venv\Scripts\activate.bat
-```
-
-**On Linux / macOS:**
+### Step 2: Install Required Dependencies
+Install the required packages directly using `pip`:
 ```bash
-python3 -m venv venv
-source venv/bin/activate
-```
-
-### Step 3: Install Required Dependencies
-```bash
-pip install --upgrade pip
 pip install -r requirements.txt
 ```
 
-### Step 4: Run the Streamlit Web Application
+### Step 3: Run the Streamlit Web Application
+Launch the interactive web dashboard:
 ```bash
 streamlit run app.py
 ```
@@ -182,7 +162,7 @@ http://localhost:8501
 ├── evaluate.py                       # Standalone CLI evaluation script
 ├── train.py                          # End-to-end model training script
 ├── requirements.txt                  # Python dependencies
-├── .gitignore                        # Git ignore rules (excludes large datasets, venv, caches)
+├── .gitignore                        # Git ignore rules (excludes large datasets, caches)
 └── README.md                         # Project documentation
 ```
 
