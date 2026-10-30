@@ -1,0 +1,47 @@
+# ==========================================
+# Python & Virtual Environments
+# ==========================================
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+.venv/
+
+# ==========================================
+# Large Raw Dataset (Do NOT push to GitHub)
+# (GitHub rejects files > 100MB; CSE-CIC-IDS2018 is ~725MB)
+# ==========================================
+CSE-CIC-IDS2018/
+*.parquet.tmp
+
+# ==========================================
+# Compressed Submission Archives & Backups
+# ==========================================
+*.zip
+*.tar.gz
+*.rar
+*.7z
+
+# ==========================================
+# IDEs, Editors & OS Metadata
+# ==========================================
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# ==========================================
+# Streamlit & Cache Outputs
+# ==========================================
+.streamlit/secrets.toml
+
